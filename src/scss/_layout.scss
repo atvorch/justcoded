@@ -1,0 +1,86 @@
+//------------------------------- GRID
+@mixin responsive-class($class-name, $screens) {
+    .#{$class-name} {
+        @content;
+    }
+    @each $screen-name, $screen-size in $screens {
+        .#{$class-name}-#{$screen-name} {
+            @media screen and (min-width: #{$screen-size}px) {
+                @content;
+            }
+        }
+        .#{$class-name}-upto-#{$screen-name} {
+            @media screen and (max-width: #{$screen-size - 1}px) {
+                @content;
+            }
+        }
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+   
+    @mixin grid($screen, $padding, $max-width: 100%) {
+         & {
+            @media (min-width: #{$screen}px) {
+                padding-left: #{$padding}px;
+                padding-right: #{$padding}px;
+    
+                @if $max-width {
+                    margin-right: auto;
+                    margin-left: auto;
+                    max-width: $max-width;
+                }
+            }
+        }
+    }
+
+    @include grid($screen-xs, 10);
+    @include grid($screen-sm, 20);
+    @include grid($screen-md, 50);
+    @include grid($screen-lg, 50, 1500px);
+    @include grid($screen-hg, 40, 1500px);
+    @include grid($screen-gt, 40, 1500px);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-right: -#{$gap}px;
+    margin-left: -#{$gap}px;
+}
+
+.container-fluid {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+[class*="col-"] {
+    position: relative;
+    display: block;
+    padding-left: #{$gap}px;
+    padding-right: #{$gap}px;
+}
+
+
+@include responsive-class(col_1, $screens){width: 10%};
+@include responsive-class(col-2, $screens){width: 20%};
+@include responsive-class(col-3, $screens){width: 33.33333%};
+@include responsive-class(col-4, $screens){width: 40%};
+@include responsive-class(col-5, $screens){width: 50%};
+@include responsive-class(col-6, $screens){width: 60%};
+@include responsive-class(col_7, $screens){width: 66.666667%};
+@include responsive-class(col_8, $screens){width: 80%};
+@include responsive-class(col_9, $screens){width: 90%};
+@include responsive-class(col-10, $screens){width: 100%;};
+@include responsive-class(col_hidden, $screens){display: none};
+@include responsive-class(hidden, $screens){display: none};
