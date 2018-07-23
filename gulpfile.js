@@ -6,6 +6,7 @@ var minifyjs = require('gulp-js-minify');
 var sourcemaps = require('gulp-sourcemaps'); 
 var browserSync = require('browser-sync');
 var gulpSequence = require('gulp-sequence');
+var wait = require('gulp-wait');
 
 const server = browserSync.create();
 
@@ -39,11 +40,12 @@ gulp.task('build:js', function () {
 //build sass
 gulp.task('build:sass', function () {  
 	return gulp.src(path.src.scss)
+	.pipe(wait(1500))
 	.pipe(sass())
 	.pipe(autiprefixer())
 	.pipe(sourcemaps.init())
     .pipe(cleanCSS())
-    .pipe(sourcemaps.write())
+	.pipe(sourcemaps.write())
 	.pipe(gulp.dest(path.build.scss));
 });
 

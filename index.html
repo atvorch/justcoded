@@ -10,46 +10,52 @@
     </head>
 
     <body>
+        <nav id="nav" class="nav">
+            <div class="nav__body container">
+                <a class="nav__logo">Vilas</a>
+                <button id="menu-toggle" class="menu-toggle">
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__circle"></span>
+                </button>
+                <ul id="menu" class="menu">
+                    <li class="menu__item"><a class="menu__link menu__link--selected" href="#home">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#portfolio">Portfolio</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#blog">Blog</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#Contacts">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
         <header class="header">
             <div class="container">
-                <div class="row">
-                    <nav class="nav">
-                        <a class="nav__logo">Vilas</a>
-                        <ul class="nav__items">
-                            <li class="nav__item"><a class="nav__link" href="">Home</a></li>
-                            <li class="nav__item"><a class="nav__link" href="">About</a></li>
-                            <li class="nav__item"><a class="nav__link" href="">Portfolio</a></li>
-                            <li class="nav__item"><a class="nav__link" href="">Blog</a></li>
-                            <li class="nav__item"><a class="nav__link" href="">Contact</a></li>
-                        </ul>
-                    <button class="nav__toggle"></button>
-                    </nav>
-                </div>
                 <div class="row justify-content-center">
-                    <div class="message col-12 col-sm-6">
+                    <div class="message col-12 col-sm-10 col-md-8 col-lg-6">
+                        
                         <h1 class="message__title">Want Perfect Outpu?</h1>
                         <h2 class="message__subtitle">Let's join us :)</h2>
                         <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quia odio recusandae, earum pariatur, rerum nisi cumque eius veritatis aperiam, sunt quis omnis. Magni</p>
+                        <div class="row message__links">
+                            <div class="col-6 col-sm-4">
+                                <a class="button">Design</a>  
+                            </div>
+                            <div class="col-6 col-sm-4">
+                                <a class="button">Developing</a>   
+                            </div>
+                        </div> 
                     </div>
                 </div>
-                <div class="row justify-content-center message__links">
-                    <div class="col-6 col-sm-4">
-                        <a class="button">Design</a>  
-                    </div>
-                    <div class="col-6 col-sm-4">
-                        <a class="button">Developing</a>   
-                    </div>
-                </div> 
+              
             </div>
         </header>
-        <main class="main">
-            <section class="about">
+        <main  class="main">
+            <section id="about" class="about">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-6">
                             <div class="about-info">
                                 <span class="about-info__company">Vilas is</span>
-                                <span class="about-info__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos in illum nemo, ullam vitae autem. Dolor, omnis recusandae! Exercitationem et dicta consectetur quaerat dolor sequi dignissimos molestias aliquid, inventore commodi?</span>
+                                <span class="about-info__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, rem laboriosam. Magni, exercitationem ab! Recusandae vero provident quis, corporis reiciendis perspiciatis neque eaque temporibus voluptatum eveniet itaque iure maiores aut.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos in illum nemo, ullam vitae autem. Dolor, omnis recusandae! Exercitationem et dicta consectetur quaerat dolor sequi dignissimos molestias aliquid, inventore commodi?</span>
                             </div>
                         </div>  
                         <div class="col-12 col-md-6">
@@ -63,12 +69,14 @@
                     </div>
                 </div>
             </section>
-            <section class="works">
+            <section id="portfolio" class="works">
                 <div class="container">
-                    <div class="row" >
+                    <div class="row">
                         <div class="col-12">
                             <h3 class="works__caption">Latest Published Projects.</h3>
                         </div>
+                    </div>
+                    <div class="row works__gallery">
                         <div class="col-12 col-sm-4">
                             <div class="work">
                                 <img src="src/assets/img/1-work.jpg" alt="Food Menu Fliyer Template" class="work__picture">
@@ -192,6 +200,8 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="row justify-content-center">
                         <div class="col-12">
                             <a class="button works__link">See All</a>
                         </div>
@@ -199,11 +209,11 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
+        <footer id="contacts" class="footer">
             <section class="contacts container">
                 <div class="row">
-                    <div class="col-12">
-                        <h3>Vilas</h3>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <h3 class="contacts__title">Vilas</h3>
                         <ul class="contacts__list">
                             <li class="contacts__item">
                                 <a href="#" class="contacts__link">Terms & Conditions</a>
@@ -219,8 +229,8 @@
                             </li>   
                         </ul>
                     </div>
-                    <div class="col-12">
-                        <h3>Useful Links</h3>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <h3 class="contacts__title">Useful Links</h3>
                         <ul class="contacts__list">
                             <li class="contacts__item">
                                 <a href="#" class="contacts__link">Common FAQs</a>
@@ -236,26 +246,38 @@
                             </li>   
                         </ul>
                     </div>
-                    <div class="col-12">
-                        <h3>Recent Blog</h3>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <h3 class="contacts__title">Recent Blog</h3>
                         <ul class="contacts__list">
-                            <li class="contacts__item">
-                                <a href="#" class="contacts__link">Site Map</a>
+                            <li class="contacts__item contacts__post">
+                                <span class="contacts__post-title">Lorem ipsum dolor sit amet consectetur adipisicing eli</span>
+                                <span class="contacts__post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati totam dignissimos beatae perferendis ullam itaque, consectetur quia. Repudiandae, ab neque laudantium est aperiam, animi error, illo praesentium fugit harum consectetur.</span>
+                            </li>
+                            <li class="contacts__item contacts__post">
+                                <span class="contacts__post-title">Lorem ipsum dolor sit amet consectetur adipisicing eli</span>
+                                <span class="contacts__post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati totam dignissimos beatae perferendis ullam itaque, consectetur quia. Repudiandae, ab neque laudantium est aperiam, animi error, illo praesentium fugit harum consectetur.</span>
                             </li>
                         </ul>
                     </div>
-                    <div class="contact col-12">
-                        <h3 class="contact__title">Newslatter</h3>
-                        <h3 class="contact__text">Newslatter</h3>
-                        <form class="subscribe" name="subscribe" action="">
-                            <input class="subscribe__input" type="email">
-                            <input class="subscribe__button button" type="submit" >
-                        </form>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <h3 class="contacts__title">Newslatter</h3>
+                        <ul class="contacts__list">
+                            <li class="contacts__item contacts__newsl-item">
+                                <span class="contacts__newsl-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem esse impedit consequuntur aliquam sit, ipsa facere neque ipsam totam veniam, libero officia et rerum at odio, deserunt consequatur! Vel, totam!</span>
+                            </li>
+                            <li class="contacts__item ">
+                                <form class="subscribe" name="subscribe" action="">
+                                    <input class="subscribe__input" type="email">
+                                    <input class="subscribe__submit button" type="submit" >
+                                </form>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
             <div class="copyright">A Product from "AFLAME"</section>
         </footer>
         <script src="http://localhost:35729/livereload.js"></script>
+        <script src="main.js"></script>
     </body>
 </html>

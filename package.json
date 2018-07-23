@@ -9,7 +9,7 @@
   "author": "atvorch",
   "license": "ISC",
   "dependencies": {
-   
+    "gulp-wait": "0.0.2"
   },
   "devDependencies": {
     "jquery": "^3.3.1",
