@@ -1,21 +1,5 @@
 //------------------------------- GRID
-@mixin responsive-class($class-name, $screens) {
-    .#{$class-name} {
-        @content;
-    }
-    @each $screen-name, $screen-size in $screens {
-        .#{$class-name}-#{$screen-name} {
-            @media screen and (min-width: #{$screen-size}px) {
-                @content;
-            }
-        }
-        .#{$class-name}-upto-#{$screen-name} {
-            @media screen and (max-width: #{$screen-size - 1}px) {
-                @content;
-            }
-        }
-    }
-}
+
 
 .container {
     width: 100%;
@@ -26,7 +10,7 @@
     padding-left: 10px;
     padding-right: 10px;
     position: relative;
-   
+    
     @mixin grid($screen, $padding, $max-width: 100%) {
          & {
             @media (min-width: #{$screen}px) {
@@ -48,6 +32,25 @@
     @include grid($screen-lg, 50, 1500px);
     @include grid($screen-hg, 40, 1500px);
     @include grid($screen-gt, 40, 1500px);
+    
+}
+
+@mixin responsive-class($class-name, $screens) {
+    .#{$class-name} {
+        @content;
+    }
+    @each $screen-name, $screen-size in $screens {
+        .#{$class-name}-#{$screen-name} {
+            @media screen and (min-width: #{$screen-size}px) {
+                @content;
+            }
+        }
+        .#{$class-name}-upto-#{$screen-name} {
+            @media screen and (max-width: #{$screen-size - 1}px) {
+                @content;
+            }
+        }
+    }
 }
 
 .row {

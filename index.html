@@ -6,47 +6,256 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Vilas</title>
-        <link rel="stylesheet" href="dist/main.css">
+        <link rel="stylesheet" href="main.css">
     </head>
 
     <body>
         <header class="header">
-            <nav class="nav">
-                <a class="nav__logo">Vilas</a>
-                <ul class="nav__items">
-                    <li class="nav__item"><a class="nav__link" href="">Home</a></li>
-                    <li class="nav__item"><a class="nav__link" href="">About</a></li>
-                    <li class="nav__item"><a class="nav__link" href="">Portfolio</a></li>
-                    <li class="nav__item"><a class="nav__link" href="">Blog</a></li>
-                    <li class="nav__item"><a class="nav__link" href="">Contact</a></li>
-                </ul>
-                <button class="nav__toggle"></button>
-            </nav>
-            <div class="header__message message">
-                <h1 class="message__title">Want Perfect Outpu?</h1>
-                <h2 class="message__subtitle">Let's join us :)</h2>
-                <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quia odio recusandae, earum pariatur, rerum nisi cumque eius veritatis aperiam, sunt quis omnis. Magni commodi nobis reiciendis dolorem? Repellat, veniam.</p>
-                <a class="message__link">Design</a>  
-                <a class="message__link">Developing</a>   
+            <div class="container">
+                <div class="row">
+                    <nav class="nav">
+                        <a class="nav__logo">Vilas</a>
+                        <ul class="nav__items">
+                            <li class="nav__item"><a class="nav__link" href="">Home</a></li>
+                            <li class="nav__item"><a class="nav__link" href="">About</a></li>
+                            <li class="nav__item"><a class="nav__link" href="">Portfolio</a></li>
+                            <li class="nav__item"><a class="nav__link" href="">Blog</a></li>
+                            <li class="nav__item"><a class="nav__link" href="">Contact</a></li>
+                        </ul>
+                    <button class="nav__toggle"></button>
+                    </nav>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="message col-12 col-sm-6">
+                        <h1 class="message__title">Want Perfect Outpu?</h1>
+                        <h2 class="message__subtitle">Let's join us :)</h2>
+                        <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quia odio recusandae, earum pariatur, rerum nisi cumque eius veritatis aperiam, sunt quis omnis. Magni</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center message__links">
+                    <div class="col-6 col-sm-4">
+                        <a class="button">Design</a>  
+                    </div>
+                    <div class="col-6 col-sm-4">
+                        <a class="button">Developing</a>   
+                    </div>
+                </div> 
             </div>
         </header>
-        <main>
+        <main class="main">
             <section class="about">
-                <div class="about__"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="about-info">
+                                <span class="about-info__company">Vilas is</span>
+                                <span class="about-info__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos in illum nemo, ullam vitae autem. Dolor, omnis recusandae! Exercitationem et dicta consectetur quaerat dolor sequi dignissimos molestias aliquid, inventore commodi?</span>
+                            </div>
+                        </div>  
+                        <div class="col-12 col-md-6">
+                            <div class="about-gallery">
+                                <div class="about-gallery__card">
+                                    <span class="about-gallery__title">Professional PSD Template Design</span>
+                                    <p class="about-gallery__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium reprehenderit eum fuga obcaecati aut amet iure, vel cumque magni atque earum totam dolore excepturi itaque fugit corrupti quaerat, aperiam asperiores.</p>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
             </section>
             <section class="works">
-                <h3 class="works__caption">Latest Published Projects.</h3>
-                <div class="works__gallery"></div>
-                <a class="works__link">See All</a>
+                <div class="container">
+                    <div class="row" >
+                        <div class="col-12">
+                            <h3 class="works__caption">Latest Published Projects.</h3>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <div class="work">
+                                <img src="src/assets/img/1-work.jpg" alt="Food Menu Fliyer Template" class="work__picture">
+                                <div class="work__overlay">
+                                    <div class="work__header">
+                                        <button class="work__eye">
+                                            <img src="src/assets/icons/work-eye.png" alt="view">
+                                        </button>
+                                        <button class="work__heart">
+                                            <img src="src/assets/icons/work-heart.png" alt="like">
+                                        </button>
+                                    </div>
+                                    <div class="work__footer">
+                                        <span class="work__title">Food Menu Fliyer Template</span>
+                                        <span class="work__subtitle">Graphic Design</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work">
+                                <div class="work__overlay">
+                                    <button class="work__eye">
+                                        <img src="src/assets/icons/work-eye.png" alt="view">
+                                    </button>
+                                    <button class="work__heart">
+                                        <img src="src/assets/icons/work-heart.png" alt="like">
+                                    </button>
+                                </div>
+                                <img src="src/assets/img/2-work.jpg" alt="Food Menu Fliyer Template" class="work__picture">
+                                <div class="work__footer">
+                                    <span class="work__title">Food Menu Fliyer Template</span>
+                                    <span class="work__subtitle">Graphic Design</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <div class="work">
+                                <img src="src/assets/img/3-work.jpg" alt="Food Menu Fliyer Template" class="work__picture">
+                                <div class="work__overlay">
+                                    <div class="work__header">
+                                        <button class="work__eye">
+                                            <img src="src/assets/icons/work-eye.png" alt="view">
+                                        </button>
+                                        <button class="work__heart">
+                                            <img src="src/assets/icons/work-heart.png" alt="like">
+                                        </button>
+                                    </div>
+                                    <div class="work__footer">
+                                        <span class="work__title">Food Menu Fliyer Template</span>
+                                        <span class="work__subtitle">Graphic Design</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work">
+                                <img src="src/assets/img/4-work.jpg" alt="Food Menu Fliyer Template" class="work__picture">
+                                <div class="work__overlay">
+                                    <div class="work__header">
+                                        <button class="work__eye">
+                                            <img src="src/assets/icons/work-eye.png" alt="view">
+                                        </button>
+                                        <button class="work__heart">
+                                            <img src="src/assets/icons/work-heart.png" alt="like">
+                                        </button>
+                                    </div>
+                                    <div class="work__footer">
+                                        <span class="work__title">Food Menu Fliyer Template</span>
+                                        <span class="work__subtitle">Graphic Design</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work">
+                                <img src="src/assets/img/5-work.jpg" alt="Food Menu Fliyer Template" class="work__picture">
+                                <div class="work__overlay">
+                                    <div class="work__header">
+                                        <button class="work__eye">
+                                            <img src="src/assets/icons/work-eye.png" alt="view">
+                                        </button>
+                                        <button class="work__heart">
+                                            <img src="src/assets/icons/work-heart.png" alt="like">
+                                        </button>
+                                    </div>
+                                    <div class="work__footer">
+                                        <span class="work__title">Food Menu Fliyer Template</span>
+                                        <span class="work__subtitle">Graphic Design</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <div class="work">
+                                <img src="src/assets/img/6-work.jpg" alt="Food Menu Fliyer Template" class="work__picture">
+                                <div class="work__overlay">
+                                    <div class="work__header">
+                                        <button class="work__eye">
+                                            <img src="src/assets/icons/work-eye.png" alt="view">
+                                        </button>
+                                        <button class="work__heart">
+                                            <img src="src/assets/icons/work-heart.png" alt="like">
+                                        </button>
+                                    </div>
+                                    <div class="work__footer">
+                                        <span class="work__title">Food Menu Fliyer Template</span>
+                                        <span class="work__subtitle">Graphic Design</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work">
+                                <img src="src/assets/img/7-work.jpg" alt="Food Menu Fliyer Template" class="work__picture">
+                                <div class="work__overlay">
+                                    <div class="work__header">
+                                        <button class="work__eye">
+                                            <img src="src/assets/icons/work-eye.png" alt="view">
+                                        </button>
+                                        <button class="work__heart">
+                                            <img src="src/assets/icons/work-heart.png" alt="like">
+                                        </button>
+                                    </div>
+                                    <div class="work__footer">
+                                        <span class="work__title">Food Menu Fliyer Template</span>
+                                        <span class="work__subtitle">Graphic Design</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <a class="button works__link">See All</a>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
-        <footer>
-            <section class="contacts">
-                
+        <footer class="footer">
+            <section class="contacts container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Vilas</h3>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <a href="#" class="contacts__link">Terms & Conditions</a>
+                            </li>
+                            <li class="contacts__item">
+                                <a href="#" class="contacts__link">Contact us</a>
+                            </li>
+                            <li class="contacts__item">
+                                <a href="#" class="contacts__link">Support Desk</a>
+                            </li>
+                            <li class="contacts__item">
+                                <a href="#" class="contacts__link">Privacy Policy</a>
+                            </li>   
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        <h3>Useful Links</h3>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <a href="#" class="contacts__link">Common FAQs</a>
+                            </li>
+                            <li class="contacts__item">
+                                <a href="#" class="contacts__link">About Us</a>
+                            </li>
+                            <li class="contacts__item">
+                                <a href="#" class="contacts__link">Site Map</a>
+                            </li>
+                            <li class="contacts__item">
+                                <a href="#" class="contacts__link">Offer</a>
+                            </li>   
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        <h3>Recent Blog</h3>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <a href="#" class="contacts__link">Site Map</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact col-12">
+                        <h3 class="contact__title">Newslatter</h3>
+                        <h3 class="contact__text">Newslatter</h3>
+                        <form class="subscribe" name="subscribe" action="">
+                            <input class="subscribe__input" type="email">
+                            <input class="subscribe__button button" type="submit" >
+                        </form>
+                    </div>
+                </div>
             </section>
             <div class="copyright">A Product from "AFLAME"</section>
         </footer>
-        <script type="text/javascript" src="dist/main.js"></script>
         <script src="http://localhost:35729/livereload.js"></script>
     </body>
 </html>
