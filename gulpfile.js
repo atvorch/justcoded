@@ -1,12 +1,14 @@
-var gulp = require('gulp');  
-var sass = require('gulp-sass'); 
-var cleanCSS = require('gulp-clean-css');
-var autiprefixer = require('gulp-autoprefixer');
-var minifyjs = require('gulp-js-minify');  
-var sourcemaps = require('gulp-sourcemaps'); 
-var browserSync = require('browser-sync');
-var gulpSequence = require('gulp-sequence');
-var wait = require('gulp-wait');
+const gulp = require('gulp');  
+const sass = require('gulp-sass'); 
+const cleanCSS = require('gulp-clean-css');
+const autiprefixer = require('gulp-autoprefixer');
+const minifyjs = require('gulp-js-minify');  
+const sourcemaps = require('gulp-sourcemaps'); 
+const browserSync = require('browser-sync');
+const gulpSequence = require('gulp-sequence');
+const babel = require('gulp-babel');
+const wait = require('gulp-wait');
+const concat = require('gulp-concat');
 
 const server = browserSync.create();
 
@@ -31,9 +33,11 @@ const path = {
 //minify js
 gulp.task('build:js', function () {  
 	return gulp.src(path.src.js)
-	.pipe(sourcemaps.init())
-	.pipe(minifyjs())
-	.pipe(sourcemaps.write())
+	// .pipe(sourcemaps.init())
+	// .pipe(babel({presets: ['env']}))
+	.pipe(concat('main.js'))
+	// .pipe(minifyjs())
+	// .pipe(sourcemaps.write())
 	.pipe(gulp.dest(path.build.js));
 });
 
@@ -44,7 +48,7 @@ gulp.task('build:sass', function () {
 	.pipe(sass())
 	.pipe(autiprefixer())
 	.pipe(sourcemaps.init())
-    .pipe(cleanCSS())
+    // .pipe(cleanCSS())
 	.pipe(sourcemaps.write())
 	.pipe(gulp.dest(path.build.scss));
 });
