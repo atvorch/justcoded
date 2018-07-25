@@ -291,22 +291,24 @@
             $(document).ready(function(){
                 $('.about-gallery__slides').slick({
                     dots: true,
-                    arrows: false,
+                    arrows: true,
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    swipeToSlide: true,
-                    infinite: false,
+                    vertical: true,
+                    verticalSwiping: true,
+                    appendArrows: $('.about-gallery__controls'),
+                    nextArrow: '<button type="button" class="about-gallery__next"></button>',
+                    prevArrow: '<button type="button" class="about-gallery__prev"></button>',
                     responsive: [
                         {
-                            breakpoint: 576,
+                            breakpoint: 768,
                             settings: {
-                                dots: false,
-                                vertical: true,
-                                arrows: true,
-                                appendArrows: $('.about-gallery__controls'),
-                                nextArrow: '<button type="button" class="about-gallery__next"></button>',
-                                prevArrow: '<button type="button" class="about-gallery__prev"></button>',
-                                verticalSwiping: true
+                                dots: true,
+                                vertical: false,
+                                verticalSwiping: false,
+                                arrows: false,
+                                infinite: false,
+                                swipeToSlide: true
                             }
                         }
                     ]
