@@ -6,9 +6,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Vilas</title>
-        <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" type="text/css" href="src/libs/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="src/libs/slick/slick-theme.css"/>
+        <link rel="stylesheet" href="main.css">
     </head>
 
     <body>
@@ -24,26 +24,25 @@
                     <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
                     <li class="menu__item"><a class="menu__link" href="#portfolio">Portfolio</a></li>
                     <li class="menu__item"><a class="menu__link" href="#blog">Blog</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#Contacts">Contact</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#contacts">Contact</a></li>
                 </ul>
             </div>
         </nav>
 
-        <header class="header">
+        <header class="header" id="home">
             <div class="container">
                 <div class="row">
-                    <div class="col-3"></div>
-                    <div class="col-12 col-sm-10 offset-sm-1 col-md-8 col-lg-6">
+                    <div class="col-10 offset-1 col-sm-10 col-md-8 offset-md-2 offset-lg-3 col-lg-6">
                         <h1 class="header__title">Want Perfact Output?</h1>
                         <h2 class="header__subtitle">Let’s join with us :)</h2>
                         <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur neque quis imperdiet semper. Proin quis ex e</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-8 offset-2 offset-lg-4 col-lg-2">
+                    <div class="col-8 col-sm-4 col-md-3 offset-2 offset-md-3 offset-lg-4 col-lg-2">
                         <a class="button header__link--first">Design</a>  
                     </div>
-                    <div class="col-8 offset-2 col-lg-2">
+                    <div class="col-8 col-sm-4 col-md-3 offset-2 offset-sm-0 col-lg-2">
                         <a class="button">Developing</a>   
                     </div>
                 </div>
@@ -95,135 +94,149 @@
                         </div>
                     </div>
                     <div class="row works__gallery">
-                        <div class="col-12 col-sm-4">
-                            <div class="work">
-                                <img src="src/assets/img/1-work.jpg" alt="Food Menu Flyer Template" class="work__picture">
+                        <div class="work__col col-12 col-lg-4">
+                            <figure class="work">
+                                <picture class="work__picture">
+                                    <img class="work__img" src="src/assets/img/1-work.jpg" srcset="src/assets/img/1-work.jpg, src/assets/img/1-work@2x.jpg 2x" alt="Food Menu Flyer Template">
+                                </picture>
                                 <div class="work__overlay">
-                                    <div class="work__header">
+                                    <div class="work__icons">
                                         <button class="work__eye">
-                                            <img src="src/assets/icons/work-eye.png" alt="view">
+                                            <img class="work__icon-img" src="src/assets/icons/work-eye.png" alt="view">
                                         </button>
                                         <button class="work__heart">
-                                            <img src="src/assets/icons/work-heart.png" alt="like">
+                                            <img class="work__icon-img" src="src/assets/icons/work-heart.png" alt="like">
                                         </button>
                                     </div>
-                                    <div class="work__footer">
+                                    <figcaption class="work__caption">
                                         <span class="work__title">Food Menu Flyer Template</span>
                                         <span class="work__subtitle">Graphic Design</span>
-                                    </div>
+                                    </figcaption>
                                 </div>
-                            </div>
-                            <div class="work">
-                                <img src="src/assets/img/4-work.jpg" alt="Food Menu Flyer Template" class="work__picture">
+                            </figure>
+                            <figure class="work">
+                                <picture class="work__picture">
+                                    <img class="work__img" src="src/assets/img/4-work.jpg" srcset="src/assets/img/4-work.jpg, src/assets/img/4-work@2x.jpg 2x" alt="Food Menu Flyer Template">
+                                </picture>
                                 <div class="work__overlay">
-                                    <div class="work__header">
+                                    <div class="work__icons">
                                         <button class="work__eye">
-                                            <img src="src/assets/icons/work-eye.png" alt="view">
+                                            <img class="work__icon-img" src="src/assets/icons/work-eye.png" alt="view">
                                         </button>
                                         <button class="work__heart">
-                                            <img src="src/assets/icons/work-heart.png" alt="like">
+                                            <img class="work__icon-img" src="src/assets/icons/work-heart.png" alt="like">
                                         </button>
                                     </div>
-                                    <div class="work__footer">
+                                    <figcaption class="work__caption">
                                         <span class="work__title">Food Menu Flyer Template</span>
                                         <span class="work__subtitle">Graphic Design</span>
-                                    </div>
+                                    </figcaption>
                                 </div>
-                            </div>
+                            </figure>
                         </div>
-                        <div class="col-12 col-sm-4">
-                            <div class="work">
-                                <img src="src/assets/img/2-work.jpg" alt="Food Menu Flyer Template" class="work__picture">
+                        <div class="work__col col-12 col-lg-4">
+                            <figure class="work">
+                                <picture class="work__picture">
+                                    <img class="work__img" src="src/assets/img/2-work.jpg" srcset="src/assets/img/2-work.jpg, src/assets/img/2-work@2x.jpg 2x" alt="Food Menu Flyer Template">
+                                </picture>
                                 <div class="work__overlay">
-                                    <div class="work__header">
+                                    <div class="work__icons">
                                         <button class="work__eye">
-                                            <img src="src/assets/icons/work-eye.png" alt="view">
+                                            <img class="work__icon-img" src="src/assets/icons/work-eye.png" alt="view">
                                         </button>
                                         <button class="work__heart">
-                                            <img src="src/assets/icons/work-heart.png" alt="like">
+                                            <img class="work__icon-img" src="src/assets/icons/work-heart.png" alt="like">
                                         </button>
                                     </div>
-                                    <div class="work__footer">
+                                    <figcaption class="work__caption">
                                         <span class="work__title">Food Menu Flyer Template</span>
                                         <span class="work__subtitle">Graphic Design</span>
-                                    </div>
+                                    </figcaption>
                                 </div>
-                            </div>
-                            <div class="work">
-                                <img src="src/assets/img/5-work.jpg" alt="Food Menu Flyer Template" class="work__picture">
+                            </figure>
+                            <figure class="work">
+                                <picture class="work__picture">
+                                    <img class="work__img" src="src/assets/img/5-work.jpg" srcset="src/assets/img/5-work.jpg, src/assets/img/5-work@2x.jpg 2x" alt="Food Menu Flyer Template">
+                                </picture>
                                 <div class="work__overlay">
-                                    <div class="work__header">
+                                    <div class="work__icons">
                                         <button class="work__eye">
-                                            <img src="src/assets/icons/work-eye.png" alt="view">
+                                            <img class="work__icon-img" src="src/assets/icons/work-eye.png" alt="view">
                                         </button>
                                         <button class="work__heart">
-                                            <img src="src/assets/icons/work-heart.png" alt="like">
+                                            <img class="work__icon-img" src="src/assets/icons/work-heart.png" alt="like">
                                         </button>
                                     </div>
-                                    <div class="work__footer">
+                                    <figcaption class="work__caption">
                                         <span class="work__title">Food Menu Flyer Template</span>
                                         <span class="work__subtitle">Graphic Design</span>
-                                    </div>
+                                    </figcaption>
                                 </div>
-                            </div>
-                            <div class="work">
-                                <img src="src/assets/img/6-work.jpg" alt="Food Menu Flyer Template" class="work__picture">
+                            </figure>
+                            <figure class="work work--sm-full-width">
+                                <picture class="work__picture work__picture--sm-hg-200px">
+                                    <img class="work__img" src="src/assets/img/6-work.jpg" srcset="src/assets/img/6-work.jpg, src/assets/img/6-work@2x.jpg 2x" alt="Food Menu Flyer Template">
+                                </picture>
                                 <div class="work__overlay">
-                                    <div class="work__header">
+                                    <div class="work__icons">
                                         <button class="work__eye">
-                                            <img src="src/assets/icons/work-eye.png" alt="view">
+                                            <img class="work__icon-img" src="src/assets/icons/work-eye.png" alt="view">
                                         </button>
                                         <button class="work__heart">
-                                            <img src="src/assets/icons/work-heart.png" alt="like">
+                                            <img class="work__icon-img" src="src/assets/icons/work-heart.png" alt="like">
                                         </button>
                                     </div>
-                                    <div class="work__footer">
+                                    <figcaption class="work__caption">
                                         <span class="work__title">Food Menu Flyer Template</span>
                                         <span class="work__subtitle">Graphic Design</span>
-                                    </div>
+                                    </figcaption>
                                 </div>
-                            </div>
+                            </figure>
                         </div>
-                        <div class="col-12 col-sm-4">
-                            <div class="work">
-                                <img src="src/assets/img/3-work.jpg" alt="Food Menu Flyer Template" class="work__picture">
+                        <div class="work__col col-12 col-lg-4">
+                            <figure class="work">
+                                <picture class="work__picture">
+                                    <img class="work__img" src="src/assets/img/3-work.jpg" srcset="src/assets/img/3-work.jpg, src/assets/img/3-work@2x.jpg 2x" alt="Food Menu Flyer Template">
+                                </picture>
                                 <div class="work__overlay">
-                                    <div class="work__header">
+                                    <div class="work__icons">
                                         <button class="work__eye">
-                                            <img src="src/assets/icons/work-eye.png" alt="view">
+                                            <img class="work__icon-img" src="src/assets/icons/work-eye.png" alt="view">
                                         </button>
                                         <button class="work__heart">
-                                            <img src="src/assets/icons/work-heart.png" alt="like">
+                                            <img class="work__icon-img" src="src/assets/icons/work-heart.png" alt="like">
                                         </button>
                                     </div>
-                                    <div class="work__footer">
+                                    <figcaption class="work__caption">
                                         <span class="work__title">Food Menu Flyer Template</span>
                                         <span class="work__subtitle">Graphic Design</span>
-                                    </div>
+                                    </figcaption>
                                 </div>
-                            </div>
-                            <div class="work">
-                                <img src="src/assets/img/7-work.jpg" alt="Food Menu Flyer Template" class="work__picture">
+                            </figure>
+                            <figure class="work">
+                                <picture class="work__picture">
+                                    <img class="work__img" src="src/assets/img/7-work.jpg" srcset="src/assets/img/7-work.jpg, src/assets/img/7-work@2x.jpg 2x" alt="Food Menu Flyer Template">
+                                </picture>
                                 <div class="work__overlay">
-                                    <div class="work__header">
+                                    <div class="work__icons">
                                         <button class="work__eye">
-                                            <img src="src/assets/icons/work-eye.png" alt="view">
+                                            <img class="work__icon-img" src="src/assets/icons/work-eye.png" alt="view">
                                         </button>
                                         <button class="work__heart">
-                                            <img src="src/assets/icons/work-heart.png" alt="like">
+                                            <img class="work__icon-img" src="src/assets/icons/work-heart.png" alt="like">
                                         </button>
                                     </div>
-                                    <div class="work__footer">
+                                    <figcaption class="work__caption">
                                         <span class="work__title">Food Menu Flyer Template</span>
                                         <span class="work__subtitle">Graphic Design</span>
-                                    </div>
+                                    </figcaption>
                                 </div>
-                            </div>
+                            </figure>
                         </div>
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-12">
-                            <a class="button works__link">See All</a>
+                            <button id="loadAll" class="button works__link" onClick="loadAll()">See All</button>
                         </div>
                     </div>
                 </div>
@@ -232,7 +245,7 @@
         <footer id="contacts" class="footer">
             <section class="contacts container">
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="contacts__group col-12 col-sm-6 col-lg-3">
                         <h3 class="contacts__title">Vilas</h3>
                         <ul class="contacts__list">
                             <li class="contacts__item">
@@ -249,7 +262,7 @@
                             </li>   
                         </ul>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="contacts__group col-12 col-sm-6 col-lg-3">
                         <h3 class="contacts__title">Useful Links</h3>
                         <ul class="contacts__list">
                             <li class="contacts__item">
@@ -266,12 +279,12 @@
                             </li>   
                         </ul>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="contacts__group col-12 col-sm-6 col-lg-3">
                         <h3 class="contacts__title">Recent Blog</h3>
                         <span class="contacts__blog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur neque quis</span>
                         <span class="contacts__blog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur neque quis</span>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="contacts__group col-12 col-sm-6 col-lg-3">
                         <h3 class="contacts__title">Newslatter</h3>
                         <span class="contacts__newsl-text">Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!</span>
                         <form class="subscribe" name="subscribe">
@@ -283,15 +296,16 @@
             </section>
             <div class="copyright">A Product from "AFLAME"</section>
         </footer>
-        <script src="http://localhost:35729/livereload.js"></script>
-        <script src="main.js"></script>
         <script src="src/libs/jquery.js"></script>
         <script src="src/libs/slick/slick.min.js"></script>
+        <script src="main.js"></script>
+
         <script>
             $(document).ready(function(){
                 $('.about-gallery__slides').slick({
-                    dots: true,
+                    dots: false,
                     arrows: true,
+                    infinite: false,
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     vertical: true,
