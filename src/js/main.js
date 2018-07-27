@@ -57,7 +57,7 @@ window.addEventListener('scroll', function(e) {
 
 function loadAll() {
     loadJson('data.json', function(response) {
-        var images = JSON.parse(response);
+        var images = response;
         var gallery = document.getElementById('gallery');
         var counter = 0;
 
@@ -137,19 +137,23 @@ function loadAll() {
 }
 
 function loadJson(file, callback){
-    var xobj = new XMLHttpRequest();
-    xobj.overrideMimeType("application/json");
-    $('#loadAll').prop('disabled', true);
-    $('#loadAll').addClass('button--loading');
-    xobj.open('GET', file, true); // Replace 'my_data' with the path to your file
-    xobj.onreadystatechange = function () {
-        if (xobj.readyState == 4 && xobj.status == "200") {
+    $.ajax({
+        dataType: "json",
+        url: file,
+        beforeSend: function() {
+            $('#loadAll').prop('disabled', true);
+            $('#loadAll').addClass('button--loading');
+        },
+        error: function() {
+            $('#loadAll').prop('disabled', false);
+            $('#loadAll').removeClass('button--loading');
+        },
+        success: function(response) {
             setTimeout(function() {
                 $('#loadAll').prop('disabled', false);
                 $('#loadAll').removeClass('button--loading');
-                callback(xobj.responseText);
+                callback(response);
             }, 1000);
         }
-    };
-    xobj.send(null);  
+    });
 }
