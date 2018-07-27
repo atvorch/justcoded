@@ -622,7 +622,6 @@ body {
     }
     @media(min-width: #{$screen-lg}px){
         max-width: 100%;
-        flex-grow: 0;
     }
 
     &__col {

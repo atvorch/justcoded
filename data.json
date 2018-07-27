@@ -1,7 +1,7 @@
 [
     {
-        "src" : "src/assets/img/1-work.jpg",
-        "srcset": "src/assets/img/1-work.jpg, src/assets/img/1-work@2x.jpg 2x",
+        "src" : "src/assets/img/6-work.jpg",
+        "srcset": "src/assets/img/6-work.jpg, src/assets/img/6-work@2x.jpg 2x",
         "alt": "loaded image",
         "title" : "Food Menu Flyer Template",
         "subtitle" : "Graphic Design"
@@ -28,15 +28,15 @@
         "subtitle" : "Graphic Design"
     },
     {
-        "src" : "src/assets/img/7-work.jpg",
-        "srcset": "src/assets/img/7-work.jpg, src/assets/img/7-work@2x.jpg 2x",
+        "src" : "src/assets/img/3-work.jpg",
+        "srcset": "src/assets/img/3-work.jpg, src/assets/img/3-work@2x.jpg 2x",
         "alt": "loaded image",
         "title" : "Food Menu Flyer Template",
         "subtitle" : "Graphic Design"
     },
     {
-        "src" : "src/assets/img/3-work.jpg",
-        "srcset": "src/assets/img/3-work.jpg, src/assets/img/3-work@2x.jpg 2x",
+        "src" : "src/assets/img/4-work.jpg",
+        "srcset": "src/assets/img/4-work.jpg, src/assets/img/4-work@2x.jpg 2x",
         "alt": "loaded image",
         "title" : "Food Menu Flyer Template",
         "subtitle" : "Graphic Design"
