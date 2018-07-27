@@ -86,21 +86,21 @@
                     </div>
                 </div>
             </section>
-            <section id="portfolio" class="works">
+            <section class="works">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
                             <h3 class="works__caption">Latest Published Projects.</h3>
                         </div>
                     </div>
-                    <div class="row works__gallery">
+                    <div id="gallery" class="row works__gallery">
                         <div class="work__col col-12 col-lg-4">
                             <figure class="work">
                                 <picture class="work__picture">
                                     <img class="work__img" src="src/assets/img/1-work.jpg" srcset="src/assets/img/1-work.jpg, src/assets/img/1-work@2x.jpg 2x" alt="Food Menu Flyer Template">
                                 </picture>
                                 <div class="work__overlay">
-                                    <div class="work__icons">
+                                    <div class="work__buttons">
                                         <button class="work__eye">
                                             <img class="work__icon-img" src="src/assets/icons/work-eye.png" alt="view">
                                         </button>
@@ -119,7 +119,7 @@
                                     <img class="work__img" src="src/assets/img/4-work.jpg" srcset="src/assets/img/4-work.jpg, src/assets/img/4-work@2x.jpg 2x" alt="Food Menu Flyer Template">
                                 </picture>
                                 <div class="work__overlay">
-                                    <div class="work__icons">
+                                    <div class="work__buttons">
                                         <button class="work__eye">
                                             <img class="work__icon-img" src="src/assets/icons/work-eye.png" alt="view">
                                         </button>
@@ -140,7 +140,7 @@
                                     <img class="work__img" src="src/assets/img/2-work.jpg" srcset="src/assets/img/2-work.jpg, src/assets/img/2-work@2x.jpg 2x" alt="Food Menu Flyer Template">
                                 </picture>
                                 <div class="work__overlay">
-                                    <div class="work__icons">
+                                    <div class="work__buttons">
                                         <button class="work__eye">
                                             <img class="work__icon-img" src="src/assets/icons/work-eye.png" alt="view">
                                         </button>
@@ -159,7 +159,7 @@
                                     <img class="work__img" src="src/assets/img/5-work.jpg" srcset="src/assets/img/5-work.jpg, src/assets/img/5-work@2x.jpg 2x" alt="Food Menu Flyer Template">
                                 </picture>
                                 <div class="work__overlay">
-                                    <div class="work__icons">
+                                    <div class="work__buttons">
                                         <button class="work__eye">
                                             <img class="work__icon-img" src="src/assets/icons/work-eye.png" alt="view">
                                         </button>
@@ -178,7 +178,7 @@
                                     <img class="work__img" src="src/assets/img/6-work.jpg" srcset="src/assets/img/6-work.jpg, src/assets/img/6-work@2x.jpg 2x" alt="Food Menu Flyer Template">
                                 </picture>
                                 <div class="work__overlay">
-                                    <div class="work__icons">
+                                    <div class="work__buttons">
                                         <button class="work__eye">
                                             <img class="work__icon-img" src="src/assets/icons/work-eye.png" alt="view">
                                         </button>
@@ -199,7 +199,7 @@
                                     <img class="work__img" src="src/assets/img/3-work.jpg" srcset="src/assets/img/3-work.jpg, src/assets/img/3-work@2x.jpg 2x" alt="Food Menu Flyer Template">
                                 </picture>
                                 <div class="work__overlay">
-                                    <div class="work__icons">
+                                    <div class="work__buttons">
                                         <button class="work__eye">
                                             <img class="work__icon-img" src="src/assets/icons/work-eye.png" alt="view">
                                         </button>
@@ -218,7 +218,7 @@
                                     <img class="work__img" src="src/assets/img/7-work.jpg" srcset="src/assets/img/7-work.jpg, src/assets/img/7-work@2x.jpg 2x" alt="Food Menu Flyer Template">
                                 </picture>
                                 <div class="work__overlay">
-                                    <div class="work__icons">
+                                    <div class="work__buttons">
                                         <button class="work__eye">
                                             <img class="work__icon-img" src="src/assets/icons/work-eye.png" alt="view">
                                         </button>
@@ -288,7 +288,7 @@
                         <h3 class="contacts__title">Newslatter</h3>
                         <span class="contacts__newsl-text">Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!</span>
                         <form class="subscribe" name="subscribe">
-                            <input id="email" name="email" class="subscribe__email" type="email" title="Your email address">
+                            <input id="email" name="email" class="subscribe__email" type="email" title="Your email address" required>
                             <button class="subscribe__submit button" onclick="validateEmail();">Submit</button>
                         </form>
                     </div>

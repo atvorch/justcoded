@@ -58,7 +58,80 @@ window.addEventListener('scroll', function(e) {
 function loadAll() {
     loadJson('data.json', function(response) {
         var images = JSON.parse(response);
-        for(var i =0; i < images; i ++) {
+        var gallery = document.getElementById('gallery');
+        var counter = 0;
+
+        var col = document.createElement('div');
+        col.setAttribute('class','work__col col-12 col-lg-4');
+
+        for(var i =0; i < images.length; i ++) {
+            var image = images[i];
+            
+            var eye_icon = document.createElement('img');
+            eye_icon.classList.add('work__icon-img');
+            eye_icon.setAttribute('src', 'src/assets/icons/work-eye.png');
+            eye_icon.setAttribute('alt', 'view');
+
+            var heart_icon = document.createElement('img');
+            heart_icon.classList.add('work__icon-img');
+            heart_icon.setAttribute('src', 'src/assets/icons/work-heart.png');
+            heart_icon.setAttribute('alt', 'like');
+
+            var heart_btn = document.createElement('div');
+            heart_btn.classList.add('work__heart');
+            heart_btn.appendChild(heart_icon);
+
+            var eye_btn = document.createElement('div');
+            eye_btn.classList.add('work__eye');
+            eye_btn.appendChild(eye_icon);
+
+            var buttons = document.createElement('div');
+            buttons.classList.add('work__buttons');
+            buttons.appendChild(eye_btn);
+            buttons.appendChild(heart_btn);
+
+            var title = document.createElement('span');
+            title.classList.add('work__title');
+            title.innerHTML = image.title;
+
+            var subtitle = document.createElement('span');
+            subtitle.classList.add('work__subtitle');
+            subtitle.innerHTML = image.subtitle;
+
+            var caption = document.createElement('figcaption');
+            caption.classList.add('work__caption');
+            caption.appendChild(title);
+            caption.appendChild(subtitle);
+
+            var overlay = document.createElement('div');
+            overlay.classList.add('work__overlay');
+            overlay.appendChild(buttons);
+            overlay.appendChild(caption);
+
+            var main__img = document.createElement('img');
+            main__img.classList.add('work__img');
+            main__img.setAttribute('src', image.src);
+            main__img.setAttribute('srcset', image.srcset);
+            main__img.setAttribute('alt', image.alt);
+
+            var picture = document.createElement('picture');
+            picture.classList.add('work__picture');
+            picture.appendChild(main__img);
+
+            var figure = document.createElement('figure');
+            figure.classList.add('work');
+            figure.appendChild(picture);
+            figure.appendChild(overlay);
+            col.appendChild(figure);
+
+            ++counter;
+
+            if(counter == 2 || (i == images.length-1)) {
+                gallery.appendChild(col);
+                col = document.createElement('div');
+                col.setAttribute('class','work__col col-12 col-lg-4');
+                counter = 0;
+            } 
         }
     });
 }

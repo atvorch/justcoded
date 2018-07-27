@@ -66,7 +66,7 @@ body {
     outline: none;
     transition: 0.5s;
     user-select: none;
-
+    position: relative;
     @media (min-width: #{$screen-lg}px) {
         height: 50px;
         line-height: 30px;
@@ -75,6 +75,27 @@ body {
 
     &--loading {
         background-color: green;
+        padding-right: 30px;
+        &:after {
+            content: " ";
+            position: absolute;
+            right: 15px;
+            width: 20px;
+            height: 20px;
+            top: calc(50% - 10px);
+            border-radius: 100%; 
+            border: 3px solid #fff;
+            border-color: #fff transparent #fff transparent;
+            animation: spinning 1s linear infinite;
+        }
+        @keyframes spinning {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+        }
     }
 
     &:active {
@@ -559,8 +580,9 @@ body {
 
         @media(min-width: #{$screen-lg}px){
             margin-top: 55px;
-            margin-bottom: 101px;
+            margin-bottom: 76px;
             flex-direction: row;
+            justify-content: flex-start;
         }
     }
     &__link {
@@ -600,6 +622,7 @@ body {
     }
     @media(min-width: #{$screen-lg}px){
         max-width: 100%;
+        flex-grow: 0;
     }
 
     &__col {
@@ -607,20 +630,15 @@ body {
         flex-direction: column;
         justify-content: space-between;
         flex-wrap: wrap;
-
-        &:not(:last-child) {
-            margin-bottom: 26px;
-        }
+        margin-bottom: 26px;
 
         @media(min-width: #{$screen-sm}px){
             flex-direction: row;
         }
+
         @media(min-width: #{$screen-lg}px){
             flex-direction: column;
-            &:not(:last-child) {
-                margin-bottom: 0px;
-            }
-    
+            justify-content: flex-start;
         }
     }
     &__picture {
@@ -673,7 +691,7 @@ body {
             margin-top: 0;
         }
     }
-    &__icons {
+    &__buttons {
         order: 0;
         flex-shrink: 0;
         display: flex;
