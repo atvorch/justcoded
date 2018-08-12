@@ -1,0 +1,9 @@
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    @media (min-width: #{$screen-xl}px) {
+        padding-right: 30px;
+        padding-left: 30px;
+        max-width: 1170px;
+    }
+}

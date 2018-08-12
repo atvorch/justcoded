@@ -1,0 +1,63 @@
+.nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    transition: 0.5s;
+    background-color: transparent;
+    z-index: 100;
+
+    &--fill {
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    &__body {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        overflow: hidden;
+        @media (min-width: #{$screen-sm}px) {
+            position: relative;
+        }
+        @media (min-width: #{$screen-xl}px) {
+            padding-top: 18px;
+            padding-bottom: 18px;
+        }
+    }
+
+    &__logo {
+        color: #3e3e3e;
+        font-family: Arvo, sans-serif;
+        font-size: 30px;
+        font-weight: normal;
+        z-index: 100;
+        letter-spacing: -1px;
+        display: block;
+        position: relative;
+        cursor: default;
+
+        &:after {
+            content: '';
+            width: 10px;
+            height: 3px;
+            background: #3e3e3e;
+            position: absolute;
+            left: 6px;
+            bottom: 2px;
+        }
+       
+        @media (min-width: #{$screen-lg}px) {
+            font-size: 41px;
+
+            &:after {
+                width: 14px;
+                height: 4px;
+                left: 8px;
+                bottom: 6px;
+            }
+        }
+    }
+}

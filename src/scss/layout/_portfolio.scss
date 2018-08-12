@@ -1,0 +1,219 @@
+.works {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    @media(min-width: #{$screen-lg}px){
+        padding-top: 103px;
+        padding-bottom: 100px;
+    }
+    
+    color: $dark-gray;
+    background-color: white;
+    
+    &__caption {
+        margin: 0;
+        font-family: Arvo, sans-serif;
+        font-size: 20px;
+        text-align: center;
+        @media(min-width: #{$screen-lg}px){
+            font-size: 25px;
+        }
+    }
+
+    &__gallery {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @media(min-width: #{$screen-lg}px){
+            margin-top: 55px;
+            margin-bottom: 76px;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+    }
+
+    &__link {
+        width: 160px;
+        margin: 0 auto;
+    }
+
+}
+
+.work {
+    margin: 0;
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+        margin-bottom: 26px;
+    }
+
+    &:hover &__overlay{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    @media(min-width: #{$screen-sm}px){
+        margin-bottom: 0;
+        max-width: calc(50% - 15px);
+        &:not(:last-child){
+            margin-bottom: 26px;
+        }
+    }
+    @media(min-width: #{$screen-sm}px) and (max-width: #{$screen-lg}px) {
+        &--sm-full-width {
+            max-width: 100%;
+        }
+    }
+    @media(min-width: #{$screen-lg}px){
+        max-width: 100%;
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 26px;
+
+        @media(min-width: #{$screen-sm}px){
+            flex-direction: row;
+        }
+
+        @media(min-width: #{$screen-lg}px){
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    }
+    &__picture {
+        width: 100%;
+        height: 50vw;
+        overflow: hidden;
+        display: block;
+        box-shadow: 0 0 5px 0px rgba(0,0,0,.5);
+        
+        @media(min-width: #{$screen-sm}px){
+            height: 150px;
+        }
+     
+        @media(min-width: #{$screen-md}px){
+            height: 200px;
+        }
+        @media(min-width: #{$screen-lg}px){
+            height: auto;
+        }
+        @media(min-width: #{$screen-sm}px) and (max-width: #{$screen-lg}px) {
+            &--sm-hg-200px {
+                height: 300px;
+            }
+        }
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        object-position: top;
+    }
+    &__overlay {
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        overflow: hidden;
+
+        @media(min-width: #{$screen-lg}px){
+            transition: all 0.5s;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.5s;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin-top: 0;
+        }
+    }
+    &__buttons {
+        order: 0;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        @media(min-width: #{$screen-lg}px){
+            margin: 0;
+            height: calc(100% - 100px);
+            background: #80808073;
+            padding-top: 30px;
+        }
+    }
+    &__icon-img {
+        width: 30px;
+        height: 30px;
+        @media(min-width: #{$screen-lg}px){
+            width: 39px;
+            height: 39px;
+        }
+    }
+    &__eye, &__heart {
+        background: transparent;
+        border: 0 none;
+        padding: 0;
+        cursor: pointer;
+    }
+    &__eye {
+        @media(min-width: #{$screen-lg}px){
+            margin-right: 15px;
+        }
+    }
+    &__heart {
+        margin-left: 10px;
+        @media(min-width: #{$screen-lg}px){
+            margin-left: 15px;
+        }
+    }
+    &__caption {
+        order: -1;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        @media(min-width: #{$screen-lg}px){
+            padding: 0 27px;
+            height: 100px;
+            background: $light-gray;
+            justify-content: center;
+        }
+    }
+    &__title {
+        font-family: Arvo, sans-serif;
+        color: $dark-gray;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        @media(min-width: #{$screen-lg}px){
+            margin-bottom: 0;
+            font-size: 18px;
+        }
+    }
+    &__subtitle {
+        @extend .oneline;
+        font-family: Roboto, sans-serif;
+        color: $dark-gray;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: normal;
+        @media(min-width: #{$screen-lg}px){
+            font-size: 15px;
+        }
+    }
+   
+}

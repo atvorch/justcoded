@@ -1,3 +1,30 @@
-@import "fonts";
-@import "grid";
-@import "style";
+//--------- utils -----------
+
+@import "utils/helpers";
+@import "utils/vars";
+@import "utils/mixins";
+
+//--------- vendors -----------
+
+@import "vendors/normilize";
+@import "vendors/bootstrap-grid";
+@import "vendors/bootsrap-grid-override";
+@import "vendors/slick";
+
+//--------- base -----------
+
+@import "base/fonts";
+@import "base/general";
+
+//--------- components -----------
+
+@import "components/buttons";
+
+//--------- layout -----------
+
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/menu";
+@import "layout/about";
+@import "layout/portfolio";
+@import "layout/footer";

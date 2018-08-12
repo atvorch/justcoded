@@ -1,0 +1,9 @@
+
+@mixin text-clamp($lines: 2, $line-height: false) {
+    overflow: hidden;
+    display: block;
+
+    @if $line-height {
+        max-height: $line-height * $lines * 1px;
+    }
+}
