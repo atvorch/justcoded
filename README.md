@@ -1,7 +1,7 @@
 ## An Example of simple Landig Page Vilas
 
 #### How to:
-* gulp clone https://github.com/atvorch/justcoded.git
+* git clone https://github.com/atvorch/justcoded.git
 * npm install
 * npm run dev
 
