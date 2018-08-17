@@ -24,9 +24,9 @@ const path = {
 	},
 	watch: {
 		html: 'index.html',
-		css: 'src/css/*.css',
-		scss: 'src/scss/*.scss',
-		js: 'src/js/*.js',
+		css: 'main.css',
+		js: 'main.js',
+		scss: 'src/scss/*/*.scss'
 	}
 };
 
@@ -55,7 +55,7 @@ gulp.task('build:sass', function () {
 
 //run browsersync
 gulp.task('browser-sync', function() {  
-    browserSync.init([path.watch.scss, path.watch.img, path.watch.html, path.watch.js], {
+    browserSync.init([path.watch.css, path.watch.img, path.watch.html, path.watch.js], {
         server: {
             baseDir: "./"
         }

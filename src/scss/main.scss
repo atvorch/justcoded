@@ -22,9 +22,12 @@
 
 //--------- layout -----------
 
-@import "layout/header";
 @import "layout/navigation";
 @import "layout/menu";
-@import "layout/about";
-@import "layout/portfolio";
 @import "layout/footer";
+
+//--------- sections -----------
+
+@import "sections/banner";
+@import "sections/about";
+@import "sections/portfolio";
