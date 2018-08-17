@@ -5,6 +5,6 @@
 * npm install
 * npm run dev
 
-#### Github Pages - https://atvorch.github.io/justcoded/
+#### Github Pages - [Vilas Landing Page](https://atvorch.github.io/justcoded/) 
 
 
